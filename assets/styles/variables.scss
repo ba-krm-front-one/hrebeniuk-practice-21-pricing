@@ -1,0 +1,31 @@
+@font-face {
+  font-family: 'BebasNeueRegular';
+  src: url('../fonts/bebasneue_regular-webfont.woff2') format('woff2'),
+  url('../fonts/bebasneue_regular-webfont.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'BebasNeueThin';
+  src: url('../fonts/bebasneue_thin-webfont.woff2') format('woff2'),
+  url('../fonts/bebasneue_thin-webfont.woff') format('woff');
+  font-weight: 100;
+}
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,500');
+//color
+$main-background-color: #9789f9;
+$text-color: #181818;
+$button-colour: #6FCFFB;
+$color-popular: #FD8D7B;
+
+@mixin box-shadow-button ($color) {
+  box-shadow:
+  0 0 1px 5px rgba($color, 0.4),
+  0 0 1px 10px rgba($color, 0.1),
+  0 0 1px 15px rgba($color, 0.1);
+}
+
+//font
+$list-font: 'Roboto', sans-serif;
+$thin-title-font: BebasNeueThin, monospace;
+$regular-title-font: BebasNeueRegular, monospace;
